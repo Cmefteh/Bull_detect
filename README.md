@@ -20,14 +20,24 @@ Logiciels et bibliothèques requis:
  
  Pour exécuter ce projet sur vos données, il faut organiser tout d'abord tous vos enregistrements audios et vos fichiers d'annotations dans un même répertoire selon l'année puis l'endroit de leurs enregistrement. 
  
-En fait, nos enregistrements n’ont pas tous la même longueur, or dans une première étape, nous avons besoin d’avoir des entrées de tailles similaires pour notre réseau de neurones. Nous commençons alors par exécuter le code (Data_preparation.ipynb). Ce code permet à la fois de découper tous les enregistrements en bout de 10 secondes et de déterminer leur vérités terrain dans des fichiers ".txt". 
+En fait, les enregistrements n’ont pas tous la même longueur, or dans une première étape, nous avons besoin d’avoir des entrées de tailles similaires pour notre réseau de neurones. Nous commençons alors par exécuter le code (data_preparation.py). Ce code permet à la fois de découper tous les enregistrements en bout de 10 secondes et de déterminer leur vérités terrain dans des fichiers ".txt". 
 
-Il suffit juste de préciser le lien du répertoire qui contient toutes les années et le modifier dans la variable "audio_dir" dans le code (Data_preparation.ipynb). Puis, modifier les deux variables: 
+Il suffit juste de préciser le lien du répertoire qui contient toutes les années et le modifier dans la variable "audio_dir" dans le code (data_preparation.py). Puis, modifier les deux variables: 
  s_dir = ' l'endroit (path)  où  vous souhaitez enregistrer les audios découpés ' et bull_test = ' l'endroit (path)  où  vous souhaitez enregistrer les vérités terrain '. 
 
 2) 
  
- Aprés le découpage des audios, nous calculons maintenant le spectrogramme de chaque audio découpé et nous enregistrons nos fichiers 
+ Aprés le découpage des audios, nous calculons maintenant le spectrogramme de chaque enregistrement découpé. Pour cela, nous exécutons le code (calcule_spectrogrammes.py). 
+ Nous modifions tout d'abord la variable "audio_dir" par le path du répertoire de l'année que nous voulons calculer son spectrogramme et la variable "features_dir" par le path où nous souhaitons enregistrer nos spectrogrammes calculés. Attention ! il faut que le path de "features_dir" contient un répertoire avec le même nom que le répertoire de l'année en exécution. 
+ ___Exemple____: 
+audio_dir = '/MRM/data/audios_decoupés/2013_05_16-23_15_00/'
+features_dir = '/MRM/data/spectrogrammes/2013_05_16-23_15_00/'
+ 
+De même pour les répertoires des autres années. 
+NB: les spectrogrammes calculés seront ensuite enregistrés dans des fichiers ".txt". 
+
+3) 
+
 
  
 
