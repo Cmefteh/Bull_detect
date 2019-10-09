@@ -23,7 +23,10 @@ Logiciels et bibliothèques requis:
 En fait, les enregistrements n’ont pas tous la même longueur, or dans une première étape, nous avons besoin d’avoir des entrées de tailles similaires pour notre réseau de neurones. Nous commençons alors par exécuter le code (data_preparation.py). Ce code permet à la fois de découper tous les enregistrements en bout de 10 secondes et de déterminer leur vérités terrain dans des fichiers ".txt". 
 
 Il suffit juste de préciser le lien du répertoire qui contient toutes les années et le modifier dans la variable "audio_dir" dans le code (data_preparation.py). Puis, modifier les deux variables: 
- s_dir = ' l'endroit (path)  où  vous souhaitez enregistrer les audios découpés ' et bull_test = ' l'endroit (path)  où  vous souhaitez enregistrer les vérités terrain '. 
+
+ s_dir = ' l'endroit (path)  où  vous souhaitez enregistrer les audios découpés ' 
+ 
+ bull_test = ' l'endroit (path)  où  vous souhaitez enregistrer les vérités terrain '
 
 2) 
  
