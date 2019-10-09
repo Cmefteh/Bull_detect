@@ -29,11 +29,15 @@ Il suffit juste de préciser le lien du répertoire qui contient toutes les ann�
  
  Aprés le découpage des audios, nous calculons maintenant le spectrogramme de chaque enregistrement découpé. Pour cela, nous exécutons le code (calcule_spectrogrammes.py). 
  Nous modifions tout d'abord la variable "audio_dir" par le path du répertoire de l'année que nous voulons calculer son spectrogramme et la variable "features_dir" par le path où nous souhaitons enregistrer nos spectrogrammes calculés. Attention ! il faut que le path de "features_dir" contient un répertoire avec le même nom que le répertoire de l'année en exécution. 
- ___Exemple____: 
+
+___Exemple____: 
+ 
 audio_dir = '/MRM/data/audios_decoupés/2013_05_16-23_15_00/'
+
 features_dir = '/MRM/data/spectrogrammes/2013_05_16-23_15_00/'
  
 De même pour les répertoires des autres années. 
+
 NB: les spectrogrammes calculés seront ensuite enregistrés dans des fichiers ".txt". 
 
 3) 
