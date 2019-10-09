@@ -27,7 +27,7 @@ for path, subdirs, files in os.walk(audio_dir):
             files_name.append(name)
 print("-", len(files_name), "files found in the directory", audio_dir)
 
-files_dir= '/baie/travail/guyot/MRM/data/sliced_audio/audio_cut/' 
+#files_dir= '/baie/travail/guyot/MRM/data/sliced_audio/audio_cut/' 
 features_dir = '/baie/travail/guyot/MRM/data/spectrogrammes/2013_05_16-23_15_00/'
  
 for file_path, file_name in zip(files_path, files_name): 
