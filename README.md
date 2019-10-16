@@ -51,7 +51,9 @@ NB: les spectrogrammes calculés seront ensuite enregistrés dans des fichiers "
 
 3)
 
-Passons maintenant au coeur du projet ;). L'ensemble de données dans cette partie est divisé en ensembles d'apprentissage et de test et un prétraitement est effectué sur les données. Le prétraitement comprend la normalisation et la sélection des features. Puis, nous avons appliqué aux données prétraitées un modèle de réseau CNN (Convolutional Neural Network). Ne vous inquiètez plus, c'est le code le plus simple dans son exécution (Train_CNN.py), il suffit de préparer deux répertoires, l'un où on trouve tous les fichiers des spectrogrammes calculés et l'autre contient tous les fichiers de vérités terrain et changer bien évidemment les path au début.
+Passons maintenant au coeur du projet ;). 
+
+L'ensemble de données dans cette partie est divisé en ensembles d'apprentissage et de test et un prétraitement est effectué sur les données. Le prétraitement comprend la normalisation et la sélection des features. Puis, nous avons appliqué aux données prétraitées un modèle de réseau CNN (Convolutional Neural Network). Ne vous inquiètez plus, c'est le code le plus simple dans son exécution (Train_CNN.py), il suffit de préparer deux répertoires, l'un où on trouve tous les fichiers des spectrogrammes calculés et l'autre contient tous les fichiers de vérités terrain et changer bien évidemment les path au début.
 
 Data_file = 'les labels' 
 
