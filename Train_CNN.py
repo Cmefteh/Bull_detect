@@ -21,14 +21,9 @@ import matplotlib.pyplot as plt
 # Load features
 
 data_file = 'train2/labels'
-#data_file = '/home/guyot/Data/_data/MRM/data/sliced_audio/test/2009_05_08-01_00_00.csv'
-
 features_dir = 'train2/features/'
-#features_dir = '/home/guyot/Data/_data/MRM/data/spectrogrammes/2009_05_08-01_00_00/'
 
 ext = '.txt'
-#ext = '_mel.txt'
-
 
 labels = []
 features = []
